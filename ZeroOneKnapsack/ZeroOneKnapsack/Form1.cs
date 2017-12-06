@@ -54,14 +54,16 @@ namespace ZeroOneKnapsack
                 lbTezinskaVrijednost.Visible = true;
                 tbNetoVrijednost.Visible = true;
                 tbTezinskaVrijednost.Visible = true;
-                tbPreostalo.Visible = true;
+                lbPreostalo.Visible = true;
 
                 btnUnesi.Visible = true;
 
                 ranac.Kapacitet = Convert.ToInt32(tbKapacitet.Text);
                 brojVar = Convert.ToInt32(tbBrojVar.Text);
                 preostalo = brojVar;
-                tbPreostalo.Text = "Preostalo za unijeti: " + (preostalo).ToString();
+                lbPreostalo.Text = "Preostalo za unijeti: " + (preostalo).ToString();
+
+
             }
         }
 
@@ -79,6 +81,38 @@ namespace ZeroOneKnapsack
             }
         }
 
+        private void tbBrojVar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbKapacitet_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbNetoVrijednost_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbTezinskaVrijednost_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
         private void btnUnesi_Click(object sender, EventArgs e)
         {
             if (brojac < brojVar)
@@ -90,7 +124,7 @@ namespace ZeroOneKnapsack
                 ranac.ListaUnosa.Add(varijabla);
                 brojac++;
                 preostalo--;
-                tbPreostalo.Text = "Preostalo za unijeti: " + (preostalo).ToString();
+                lbPreostalo.Text = "Preostalo za unijeti: " + (preostalo).ToString();
             }
             if (brojac == brojVar)
             {
@@ -101,7 +135,7 @@ namespace ZeroOneKnapsack
                 lbTezinskaVrijednost.Visible = false;
                 tbNetoVrijednost.Visible = false;
                 tbTezinskaVrijednost.Visible = false;
-                tbPreostalo.Visible = false;
+                lbPreostalo.Visible = false;
                 btnUnesi.Visible = false;
                 btnPomoc.Visible = false;
                 btnOdustani.Visible = false;
@@ -145,7 +179,7 @@ namespace ZeroOneKnapsack
             lbTezinskaVrijednost.Visible = false;
             tbNetoVrijednost.Visible = false;
             tbTezinskaVrijednost.Visible = false;
-            tbPreostalo.Visible = false;
+            lbPreostalo.Visible = false;
 
             btnDalje.Visible = true;
             lbNaslov.Visible = true;
@@ -154,6 +188,6 @@ namespace ZeroOneKnapsack
             lbRjesenjeIznos.Visible = false;
             lbVarURancu.Visible = false;
             lbVarURancuIspis.Visible = false;
-        }
+        }        
     }
 }

@@ -40,7 +40,7 @@
             this.lbTezinskaVrijednost = new System.Windows.Forms.Label();
             this.tbNetoVrijednost = new System.Windows.Forms.TextBox();
             this.tbTezinskaVrijednost = new System.Windows.Forms.TextBox();
-            this.tbPreostalo = new System.Windows.Forms.Label();
+            this.lbPreostalo = new System.Windows.Forms.Label();
             this.lbRjesenjeText = new System.Windows.Forms.Label();
             this.lbRjesenjeIznos = new System.Windows.Forms.Label();
             this.lbVarURancu = new System.Windows.Forms.Label();
@@ -109,6 +109,7 @@
             this.tbBrojVar.Name = "tbBrojVar";
             this.tbBrojVar.Size = new System.Drawing.Size(42, 20);
             this.tbBrojVar.TabIndex = 5;
+            this.tbBrojVar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbBrojVar_KeyPress);
             // 
             // tbKapacitet
             // 
@@ -116,6 +117,7 @@
             this.tbKapacitet.Name = "tbKapacitet";
             this.tbKapacitet.Size = new System.Drawing.Size(42, 20);
             this.tbKapacitet.TabIndex = 6;
+            this.tbKapacitet.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbKapacitet_KeyPress);
             // 
             // btnUnesi
             // 
@@ -155,23 +157,25 @@
             this.tbNetoVrijednost.Name = "tbNetoVrijednost";
             this.tbNetoVrijednost.Size = new System.Drawing.Size(42, 20);
             this.tbNetoVrijednost.TabIndex = 10;
+            this.tbNetoVrijednost.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbNetoVrijednost_KeyPress);
             // 
             // tbTezinskaVrijednost
             // 
-            this.tbTezinskaVrijednost.Location = new System.Drawing.Point(280, 124);
+            this.tbTezinskaVrijednost.Location = new System.Drawing.Point(280, 128);
             this.tbTezinskaVrijednost.Name = "tbTezinskaVrijednost";
             this.tbTezinskaVrijednost.Size = new System.Drawing.Size(42, 20);
             this.tbTezinskaVrijednost.TabIndex = 11;
+            this.tbTezinskaVrijednost.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbTezinskaVrijednost_KeyPress);
             // 
-            // tbPreostalo
+            // lbPreostalo
             // 
-            this.tbPreostalo.AutoSize = true;
-            this.tbPreostalo.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPreostalo.Location = new System.Drawing.Point(41, 68);
-            this.tbPreostalo.Name = "tbPreostalo";
-            this.tbPreostalo.Size = new System.Drawing.Size(146, 16);
-            this.tbPreostalo.TabIndex = 12;
-            this.tbPreostalo.Text = "Preostalo za unijeti:";
+            this.lbPreostalo.AutoSize = true;
+            this.lbPreostalo.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPreostalo.Location = new System.Drawing.Point(41, 68);
+            this.lbPreostalo.Name = "lbPreostalo";
+            this.lbPreostalo.Size = new System.Drawing.Size(146, 16);
+            this.lbPreostalo.TabIndex = 12;
+            this.lbPreostalo.Text = "Preostalo za unijeti:";
             // 
             // lbRjesenjeText
             // 
@@ -253,7 +257,7 @@
             this.Controls.Add(this.lbVarURancu);
             this.Controls.Add(this.lbRjesenjeIznos);
             this.Controls.Add(this.lbRjesenjeText);
-            this.Controls.Add(this.tbPreostalo);
+            this.Controls.Add(this.lbPreostalo);
             this.Controls.Add(this.tbTezinskaVrijednost);
             this.Controls.Add(this.tbNetoVrijednost);
             this.Controls.Add(this.lbTezinskaVrijednost);
@@ -288,7 +292,7 @@
         private System.Windows.Forms.Label lbTezinskaVrijednost;
         private System.Windows.Forms.TextBox tbNetoVrijednost;
         private System.Windows.Forms.TextBox tbTezinskaVrijednost;
-        private System.Windows.Forms.Label tbPreostalo;
+        private System.Windows.Forms.Label lbPreostalo;
         private System.Windows.Forms.Label lbRjesenjeText;
         private System.Windows.Forms.Label lbRjesenjeIznos;
         private System.Windows.Forms.Label lbVarURancu;
