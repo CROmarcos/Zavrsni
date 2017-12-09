@@ -46,11 +46,29 @@ namespace ZeroOneKnapsack
             {                
                 if (tbBrojVar.Text == "0" || tbBrojVar.Text == "")
                 {
-                    MessageBox.Show("Molimo unesite broj varijabli!", "Upozorenje");
+                    string poruka;
+                    if (tbBrojVar.Text == "0")
+                    {
+                        poruka = "Ne može se unijeti 0 varijabli!";
+                    }
+                    else
+                    {
+                        poruka = "Molimo unesite broj varijabli";
+                    }
+                    MessageBox.Show(poruka, "Upozorenje");
                 }
                 else if (tbKapacitet.Text == "0" || tbKapacitet.Text == "")
                 {
-                    MessageBox.Show("Molimo unesite kapacitet ranca!", "Upozorenje");
+                    string poruka;
+                    if (tbKapacitet.Text == "0")
+                    {
+                        poruka = "Kapacitet ne može biti 0!";
+                    }
+                    else
+                    {
+                        poruka = "Molimo unesite kapacitet ranca!";
+                    }
+                    MessageBox.Show(poruka, "Upozorenje");
                 }
                 else
                 {
@@ -132,11 +150,29 @@ namespace ZeroOneKnapsack
         {
             if (tbNetoVrijednost.Text == "0" || tbNetoVrijednost.Text == "")
             {
-                MessageBox.Show("Unesite neto vrijednost za varijablu!", "Upozorenje");
+                string poruka;
+                if (tbNetoVrijednost.Text == "0")
+                {
+                    poruka = "Neto vrijednost ne može biti 0!";
+                }
+                else
+                {
+                    poruka = "Molimo unesite neto vrijednost!";
+                }
+                MessageBox.Show(poruka, "Upozorenje");
             }
             else if (tbTezinskaVrijednost.Text == "0" || tbTezinskaVrijednost.Text == "")
             {
-                MessageBox.Show("Unesite tezinsku vrijednost za varijablu!", "Upozorenje");
+                string poruka;
+                if (tbTezinskaVrijednost.Text == "0")
+                {
+                    poruka = "Težinska vrijednost ne može biti 0!";
+                }
+                else
+                {
+                    poruka = "Molimo unesite težinsku vrijednost!";
+                }
+                MessageBox.Show(poruka, "Upozorenje");
             }
             else
             {
