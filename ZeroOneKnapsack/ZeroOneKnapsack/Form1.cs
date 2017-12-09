@@ -122,6 +122,12 @@ namespace ZeroOneKnapsack
             }
         }
 
+        private void btnPomoc_Click(object sender, EventArgs e)
+        {
+            frmPomoc forma = new frmPomoc();
+            forma.Show();
+        }
+
         private void btnUnesi_Click(object sender, EventArgs e)
         {
             if (tbNetoVrijednost.Text == "0" || tbNetoVrijednost.Text == "")

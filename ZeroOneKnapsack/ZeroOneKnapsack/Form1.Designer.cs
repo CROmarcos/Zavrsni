@@ -66,11 +66,11 @@
             this.lbNaslov.AutoSize = true;
             this.lbNaslov.Font = new System.Drawing.Font("Century Schoolbook", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNaslov.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.lbNaslov.Location = new System.Drawing.Point(16, 74);
+            this.lbNaslov.Location = new System.Drawing.Point(1, 74);
             this.lbNaslov.Name = "lbNaslov";
-            this.lbNaslov.Size = new System.Drawing.Size(345, 41);
+            this.lbNaslov.Size = new System.Drawing.Size(373, 41);
             this.lbNaslov.TabIndex = 1;
-            this.lbNaslov.Text = "Marco\'s Knapsack";
+            this.lbNaslov.Text = "Zero-One Knapsack";
             // 
             // btnPomoc
             // 
@@ -82,6 +82,7 @@
             this.btnPomoc.TabIndex = 2;
             this.btnPomoc.Text = "Pomoć";
             this.btnPomoc.UseVisualStyleBackColor = false;
+            this.btnPomoc.Click += new System.EventHandler(this.btnPomoc_Click);
             // 
             // lbBrojVar
             // 
@@ -271,7 +272,7 @@
             this.Controls.Add(this.lbNaslov);
             this.Controls.Add(this.btnDalje);
             this.Name = "Form1";
-            this.Text = "Marco\'s Knapsack";
+            this.Text = "Zero-One Knapsack";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
