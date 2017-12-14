@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnDalje = new System.Windows.Forms.Button();
             this.lbNaslov = new System.Windows.Forms.Label();
             this.btnPomoc = new System.Windows.Forms.Button();
@@ -271,6 +272,7 @@
             this.Controls.Add(this.btnPomoc);
             this.Controls.Add(this.lbNaslov);
             this.Controls.Add(this.btnDalje);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Zero-One Knapsack";
             this.Load += new System.EventHandler(this.Form1_Load);

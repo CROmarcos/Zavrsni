@@ -114,6 +114,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbNaslov);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmPomoc";
             this.Text = "Zero-One Knapsack - Pomoć";
             this.ResumeLayout(false);

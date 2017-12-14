@@ -18,3 +18,4 @@ C:\Users\Marko\Documents\GitHub\Zavrsni\ZeroOneKnapsack\ZeroOneKnapsack\obj\Debu
 C:\Users\Marko\Documents\GitHub\Zavrsni\ZeroOneKnapsack\ZeroOneKnapsack\obj\Debug\ZeroOneKnapsack.exe
 C:\Users\Marko\Documents\GitHub\Zavrsni\ZeroOneKnapsack\ZeroOneKnapsack\obj\Debug\ZeroOneKnapsack.pdb
 C:\Users\Marko\Documents\GitHub\Zavrsni\ZeroOneKnapsack\ZeroOneKnapsack\obj\Debug\ZeroOneKnapsack.frmPomoc.resources
+C:\Users\Marko\Documents\GitHub\Zavrsni\ZeroOneKnapsack\ZeroOneKnapsack\obj\Debug\ZeroOneKnapsack.csprojResolveAssemblyReference.cache
