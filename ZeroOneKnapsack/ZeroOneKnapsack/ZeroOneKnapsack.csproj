@@ -24,12 +24,15 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
+    <DebugType>none</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ikona.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -51,6 +54,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmOdustani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOdustani.Designer.cs">
+      <DependentUpon>frmOdustani.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPomoc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +72,9 @@
     <Compile Include="Varijabla.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOdustani.resx">
+      <DependentUpon>frmOdustani.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPomoc.resx">
       <DependentUpon>frmPomoc.cs</DependentUpon>
@@ -88,6 +100,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ikona.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

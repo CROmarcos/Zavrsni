@@ -101,11 +101,16 @@ namespace ZeroOneKnapsack
 
         private void btnOdustani_Click(object sender, EventArgs e)
         {
+            frmOdustani forma = new frmOdustani();
+            forma.Owner = this;
+            forma.ShowDialog();
+            /*
             DialogResult pitanje = MessageBox.Show("Želite li stvarno odustati?", "Odustani", MessageBoxButtons.YesNo);
             if (pitanje == DialogResult.Yes)
             {
                 Pocetna();
             }
+            */
         }
 
         private void tbBrojVar_KeyPress(object sender, KeyPressEventArgs e)
